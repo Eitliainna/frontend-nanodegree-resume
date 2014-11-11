@@ -1,414 +1,129 @@
 ﻿<!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en, RU"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en, RU"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+
+<!--
+This is an HTML document. It contains information about how elements in the website
+are arranged. In other words, it describes the layout of a website.
+I can't wait to see the resumes you put together!
+Cameron Pittman, Udacity Course Developer
+-->
+
+<!--
+The <head> of a website generally links to important resources the page will
+need to load. You'll see a lot of <link>s to CSS files for styles and
+<scripts> for JavaScript files to build interactions.
+-->
 <head>
+  <link href="css/style.css" rel="stylesheet" type="text/css"></link>
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Danni Shevchuk Portfolio </title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+  <!--
+  jQuery is a common JavaScript library for reading and making changes to the
+  Document Object Model (DOM). The DOM is a tree that contains information
+  about what is actually visible on a website.
+  While HTML is a static document, the browser converts HTML to the
+  DOM and the DOM can change. In fact, JavaScript's power comes from
+  its ability to manipulate the DOM, which is essentially a JavaScript
+  object. When JavaScript makes something interesting happen on a
+  website, it's likely the action happened because JavaScript changed
+  the DOM. jQuery is fast and easy to use, but it doesn't do anything
+  you can't accomplish with vanilla (regular) JavaScript.
+  -->
+  <script src="js/jQuery.js"></script>
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- More on helper.js in the class -->
+  <script src="js/helper.js"></script>
 
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
+  <!--
+  Uncomment the <script> tag below when you're ready to add an interactive
+  Google Map to your resume!
+  -->
+  <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
 
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
-
+  <meta name="viewport" content="width=device-width">
 </head>
-
-<body>
-
-   <!-- Header
-   ================================================== -->
-   <header id="home">
-
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            
-            <li><a class="smoothscroll" href="#about">Про меня</a></li>
-	         
-            <li><a class="smoothscroll" href="#portfolio">Работы</a></li>
-            
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">Даниэлла Шевчук</h1>
-            		
-            <h3>Это страничка-портфолио <span>графического дизайнера</span>, <span>иллюстратора</span> и <span>3D дизайнера</span>.</h3>
-		Я разносторонний специалист, кроме графических навыков, у меня так же большой опыт в 3д моделирование, в работе с проектами от начала до конца. 
-		Большой опыт в работе с корпоративными заказами. Как минимум 5 лет опыта работы в креативном агенстве, где приходилось готовить не только веб открытки, 
-		банера и тд, а так же разрабатывать и печатать промо продукцию, календари, открытки. В составе креативного агенства мы работаем с Софией Киевской, 
-		музеем Тараса Шевченка, Андреевской церковью. Ознакомится с нашей продукцией можно на сайте http://www.artbuz.ua/ 
-		<p>Я быстро обучаемая и инициативна. Умею многое, что не умею - быстро учу и умею)))
-            <hr />
-            <ul class="social">
-               <li><a href="https://www.facebook.com/danni.shevchuk"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="https://www.linkedin.com/pub/%D0%B4%D0%B0%D0%BD%D0%B8%D1%8D%D0%BB%D0%BB%D0%B0-%D1%88%D0%B5%D0%B2%D1%87%D1%83%D0%BA/a2/496/15"><i class="fa fa-linkedin"></i></a></li>
-               
-            </ul>
-         </div>
-      </div>
-
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-
-      <div class="row">
-
-         
-
-         <div class="nine columns centered">
-
-            
-
-            <p> <img class="cv"  src="images/cv.jpg" alt="" />
-            </p>
-
-            <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Контакты</h2>
-                  <p class="address">
-						   <span>Даниэлла Шевчук</span><br>
-						   <span>Украина, город Киев<br>
-						         
-                     </span><br>
-						   <span>+38(093)2591708</span><br>
-                     <span>eitliainna@gmail.com</span>
-					   </p>
-
-               </div>
-
-               <div class="columns download">
-                  <p>
-                     <a href="CV.pdf" class="button"><i class="fa fa-download"></i>Загрузить CV</a>
-                  </p>
-               </div>
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
-      </div>
-
-   </section> <!-- About Section End-->
-
-
-    
-
-
-   <!-- Portfolio Section
-   ================================================== -->
-
-   <section id="portfolio">
-
-      <div class="row">
-
-         <div class="nine columns centered">
-
-            
-
-            <!-- portfolio-wrapper -->
-			
-			
-			
-            <div id="portfolio-wrapper" class=" s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/afisha1.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      
-                              
-							</div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-				<div id="portfolio-wrapper" class=" s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/afisha2.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      
-                              
-							</div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-				
-					<div id="portfolio-wrapper" class=" s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/afisha3.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      
-                              
-							</div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-               	<div id="portfolio-wrapper" class=" s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/afisha4.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      
-                              
-							</div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-				<div id="portfolio-wrapper" class=" s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-05" title="">
-                        <img alt="" src="images/afisha5.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      
-                              
-							</div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
- 
-            </div> <!-- portfolio-wrapper end -->
-			</div> <!-- twelve columns end -->
-
-			 <!-- Modal Popup
-	      --------------------------------------------------------------- -->
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/1/1_1.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/1/1_2.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/1/1_3.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/1/1_4.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/1/1_5.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/1/1_6.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Полиграфия</h4>
-			      <p>Разработка полиграфической продукции, подготовка ее к печати. Создание веб банеров.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Graphic_design</span>
-		      </div>
-
-            <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-01 End -->
-		  
-		  
-		  
-		  <div id="modal-02" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/2/2_1.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/2/2_2.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/2/2_3.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/2/2_4.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/2/2_5.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Логотипы</h4>
-			      <p>Разработка логотипов и сопутствующих материалов</p>
-               <span class="categories"><i class="fa fa-tag"></i>Logo, Branding, Graphic_design</span>
-		      </div>
-
-            <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-02 End -->
-		  
-		  
-		  <div id="modal-03" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/3/3_1.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/3/3_2.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/3/3_3.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/3/3_4.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/3/3_5.jpg" alt="" />
-			    <img class="scale-with-grid" src="images/3/3_6.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>3Д Дизайн</h4>
-			      <p>Разработка интерьеров, рендер, подготовка чертежных технических, монтажных планов</p>
-               <span class="categories"><i class="fa fa-tag"></i>3D_design</span>
-		      </div>
-
-            <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-03 End -->
-		  
-		  
-		  
-		  <div id="modal-04" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/4/4_1.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/4/4_2.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/4/4_3.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/4/4_4.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/4/4_5.jpg" alt="" />
-			    <img class="scale-with-grid" src="images/4/4_6.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>3Д Дизайн</h4>
-			      <p>Разработка предметов для каталогов и дальнейшего использования в интерьерах</p>
-               <span class="categories"><i class="fa fa-tag"></i></span>
-		      </div>
-
-            <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-04 End -->
-		  
-		  
-		  
-		  <div id="modal-05" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/5/5_1.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/5/5_2.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/5/5_3.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/5/5_4.jpg" alt="" />
-			   <img class="scale-with-grid" src="images/5/5_5.jpg" alt="" />
-			    
-
-		      <div class="description-box">
-			      <h4>Календари и открытки</h4>
-			      <p>Разработка корпоративных календарей и открыток</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Design</span>
-		      </div>
-
-            <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-05 End -->
-
-
-
-     <!-- row End -->
-
-   </section> <!-- Portfolio Section End-->
-
-
- 
-
-
-  
-
-  
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li><a href="https://www.facebook.com/danni.shevchuk"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://www.linkedin.com/pub/%D0%B4%D0%B0%D0%BD%D0%B8%D1%8D%D0%BB%D0%BB%D0%B0-%D1%88%D0%B5%D0%B2%D1%87%D1%83%D0%BA/a2/496/15"><i class="fa fa-linkedin"></i></a></li>
-               
-               
-            </ul>
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2014 Danni Shenchuk</li>
-                  
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
-      </div>
-
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
-
+<body unresolved>
+  <div id="main">
+  Hello world!   <!-- You'll be deleting this line in the course -->
+
+    <!--
+    Everything from here to the <script> tag below is the skeleton of your
+    website. Your code will add information to each of the sections of the
+    resume below. You can pretty easily figure out what each section will
+    display by looking at the id or at what's written between the <h2> tags.
+    -->
+    <div id="header" class="center-content">
+      <ul id="topContacts" class='flex-box'></ul>
+    </div>
+    <div style='clear: both;'></div>
+    <div id="workExperience" class='gray'>
+      <h2>Work Experience</h2>
+    </div>
+    <div id="projects">
+      <h2>Projects</h2>
+    </div>
+    <div id="education" class='gray'>
+      <h2>Education</h2>
+    </div>
+    <div id="skillsChart">
+      <h2>Skills Chart</h2>
+    </div>
+    <div id="mapDiv">
+      <h2>Where I've Lived and Worked</h2>
+    </div>
+    <div id="letsConnect" class='dark-gray'>
+      <h2 class='orange center-text'>Let's Connect</h2>
+      <ul id="footerContacts" class="flex-box">
+      </ul>
+    </div>
+  </div>
+
+  <!--
+  The next line tells the browser where to download the JavaScript file you'll be
+  writing. In resumeBuilder.js, you'll be writing code that builds the resume
+  dynamically when this website, index.html, is opened.
+  -->
+  <script src="js/resumeBuilder.js"></script>
+
+
+  <!--
+  These scripts are written in JavaScript. You'll be breaking them down as part of
+  a quiz. Essentially, the next few lines are checking to see if you have not
+  changed each section of the resume. If you have not made any changes to a section
+  of the resume, then that part of the resume does not show up. More on this in the
+  course.
+  -->
+
+  <script type="text/javascript">
+  // Notice how all of a sudden there's JavaScript inside this HTML
+  // document? You can write JavaScript between <script> tags. At the end of your 
+  // JavaScript, don't forget the closing script tag with the slash (/).
+  // Also, this is a JavaScript style comment. You can comment in JavaScript with:
+  //   two slashes for all following characters on a single line, or
+  /*
+      an opening and closing set of slash asterisks for block comments.
+  */
+  if(document.getElementsByClassName("flex-item").length === 0) {
+    document.getElementById("topContacts").style.display = "none";
+  }
+  if(document.getElementsByTagName("h1").length === 0) {
+    document.getElementById("header").style.display = "none";
+  }
+  if(document.getElementsByClassName("work-entry").length === 0) {
+    document.getElementById("workExperience").style.display = "none";
+  }
+  if(document.getElementsByClassName("project-entry").length === 0) {
+    document.getElementById("projects").style.display = "none";
+  }
+  if(document.getElementsByClassName("education-entry").length === 0) {
+    document.getElementById("education").style.display = "none";
+  }
+  if(document.getElementsByClassName("skills-entry").length === 0) {
+    document.getElementById("skillsChart").style.display = "none";
+  }
+  if(document.getElementsByClassName("flex-item").length === 0) {
+    document.getElementById("letsConnect").style.display = "none";
+  }
+  if(document.getElementById("map") == undefined) {
+    document.getElementById("mapDiv").style.display = "none";
+  }
+  </script>
 </body>
-
-</html>
